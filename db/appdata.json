@@ -1,0 +1,8 @@
+{
+  "clinicasveterinarias": [
+    { "id": 1, "nomefantasia": "Pet Shop Tavares", "endereco": "Av Santos Dummont, 1987", "telefone": "(85) 3119-2091", "email": "contato@petshoptavares.com.br" }, 
+    { "id": 2, "nomefantasia": "MedPet", "endereco": "Rua Carolina Bittencourt, 49", "telefone": "(85) 3679-9887", "email": "medpet@gmail.com" }, 
+    { "id": 3, "nomefantasia": "Veterinaria Aldemar", "endereco": "CE 140, km 110", "telefone": "(82) 3451-1155", "email": "vetaldemar@yahoo.com" }, 
+    { "id": 4, "nomefantasia": "Médico do Cão", "endereco": "Avenida Pandemonio, 666", "telefone": "(85) 3001-0099", "email": "medicodocao@hotmail.com" }
+  ]
+}
