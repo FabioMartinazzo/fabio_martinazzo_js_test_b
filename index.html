@@ -1,68 +1,11 @@
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
-	<script src="js/libs/jquery-3.3.1.min.js"></script>
-	<script src="js/libs/underscore-min.js"></script>
-	<script src="js/libs/backbone-min.js"></script>
-	<script src="js/configs.js"></script>
-	<script src="js/generic.js"></script>
-	<script src="js/models/ModelClinicaVet.js"></script>
-	<script src="js/controls/ControlClinicaVet.js"></script>
-	<script src="js/views/ClinicaVet/CabecList.js"></script>
-	<script src="js/views/ClinicaVet/DetailList.js"></script>
-	<script src="js/views/ClinicaVet/Detail.js"></script>
-	<script src="js/views/ClinicaVet/List.js"></script>
-
-	<script type="text/template" id="clinica-vet-list-cabec-template">
-		<div id="cabec">
-			<input id='pesquisaFilter' value='<%= filtro %>' type='text' onkeypress='generic.callPesquisa(event, function() { new ClinicaVetListView({ collection : new ClinicaVetCollection(), model : $("#pesquisaFilter").val() }); } )' placeholder='Pesquisar...'></input>
-		</div>
-		<div id="body">
-		</div>
-	</script>
-	<script type="text/template" id="clinica-vet-list-template">
-		<ul class="clinica-vet-list"></ul>
-	</script>
-	<script type="text/template" id="clinica-vet-list-detail-template">
-		<%= item.attributes.nomefantasia %> <button onclick='new ClinicaVetDetailView({model : new BackBoneClinicaVetModel({ id : <%= item.attributes.id %> })})' type='button'>Detalhes</button>
-	</script>
-
-	<script type="text/template" id="clinica-vet-detail-template">
-		<button type='button' onclick=' new ClinicaVetListCabecView({ filtro : controlClinicaVet.GetLastFiltro() }); new ClinicaVetListView({ collection : new ClinicaVetCollection(), model : controlClinicaVet.GetLastFiltro() });'>Voltar</button>
-		<br/>
-
-		<div>Nome Fantasia:</div>
-		<div> <%= model.attributes.nomefantasia %> </div>
-		<br/>
-
-		<div>Endereço:</div>
-		<div> <%= model.attributes.endereco %> </div>
-		<br/>
-
-		<div>Telefone:</div>
-		<div> <%= model.attributes.telefone %> </div>
-		<br/>
-
-		<div>E-mail:</div>
-		<div> <%= model.attributes.email %> </div>
-	</script>
-</head>
-<body>
-	<div id="content"></div>
-
-	<script>
-		var generic = new Generic();
-
-		var modelClinicaVet = new ModelClinicaVet();
-		var controlClinicaVet = new ControlClinicaVet(modelClinicaVet);
-
-		var BackBoneClinicaVetModel = modelClinicaVet.GetBackboneModel();
-		var ClinicaVetCollection = modelClinicaVet.GetBackboneCollection();
-
-		new ClinicaVetListCabecView();
-		new ClinicaVetListView({ collection : new ClinicaVetCollection() });
-
-	</script>
-</body>
+		<script src="base/require-config.js"></script>
+		<script data-main="main" src="base/libs/require.js"></script>
+	</head>
+	<body>
+		<div id="content"></div>
+	</body>
 </html>

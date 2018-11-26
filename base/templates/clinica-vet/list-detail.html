@@ -1,0 +1,5 @@
+<ul>
+<% collection.each(function(item) { %>
+<li><%= item.get('nomefantasia') %> <button class='btn-detail' data="<%= item.get('id') %>" type='button'>Detalhes</button></li>
+<% }); %>
+</ul>

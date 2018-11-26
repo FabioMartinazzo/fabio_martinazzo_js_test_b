@@ -9,7 +9,9 @@ You may find it's page here: https://github.com/typicode/json-server
 
 1. Run json-server using that database. In a text-based eviroment the command should be: json-server /path/to/appdata.json
 
-1. Open index.html in any browser.
+1. You'll need a web-server up and running for this version of the code.
+
+1. Upload the files to a directory inside your web-server and access it from any browser.
 
 1. For now on, the application should be self explanatory.
 
@@ -27,7 +29,9 @@ A página web está aqui: https://github.com/typicode/json-server
 
 1. Rode json-server usando esse banco de dados. Em um ambiente de texto o comando deve ser: json-server /caminho/para/appdata.json
 
-1. Abra index.html em qualquer navegador.
+1. Será necessário um servidor web funcional para esta versão do código.
+
+1. Suba os arquivos para o diretório dentro do seu servidor web e acesse a aplicação de qualquer browser.
 
 1. De agora em diante, a aplicação deverá ser auto explicativa.
 
